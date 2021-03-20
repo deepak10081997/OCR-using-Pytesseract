@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--
+  Girly by FreeHTML5.co
+  Twitter: https://twitter.com/fh5co
+  Facebook: https://fb.com/fh5co
+  URL: https://freehtml5.co
+-->
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <link rel="stylesheet" href="static/style.css">
+  <title>EXTRACT</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md  fixed-top maine-menu">
+    <div class="container">
+      <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#OCR" tabindex="-1" aria-disabled="true">OCR</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#activity" tabindex="-1" aria-disabled="true">Verticles</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#references" tabindex="-1" aria-disabled="true">References</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#testimonial" tabindex="-1" aria-disabled="true">Testimonial</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid fh5co-home-banner">
+    <div class="card"> <img class="card-img" src="static/1.jpg" alt="">
+      <div class="card-img-overlay">
+        <div class="center-text">
+          <h2 class="card-title">EXTRACT!!!</h2>
+          <a href="#OCR" class="btn">
+            <svg width="201" height="51" viewBox="0 0 201 51">
+              <defs>
+                <style>
+                .cls-1 {
+                  fill: none;
+                  stroke-width: 1px;
+                  stroke: url(#linear-gradient);
+                }
+              </style>
+              <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#e90e65"/>
+                <stop offset="1" stop-color="#fff"/>
+              </linearGradient>
+            </defs>
+            <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
+          </svg>
+        Let's Start</a>
+          
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fh5co-two-img">
+    <div class="row">
+      <div class="col-sm-6 pr-0 pl-0">
+        <div class="card"> <img class="card-img" src="static/3.jpg" alt="">
+          <div class="card-img-overlay"> </div>
+        </div>
+      </div>
+      <div class="col-sm-6 pr-0 pl-0">
+        <div class="card"> <img class="card-img" src="static/5.jpg" alt="">
+          <div class="card-img-overlay"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fh5co-recent-work">
+    <div class="container contact-pop">
+      <div class="row">
+        <div class="col-md-6  pr-0">
+          <div class="card"><img class="card-img w-100" src="static/41.jpg" alt="">
+            <div class="card-img-overlay"> </div>
+          </div>
+        </div>
+        <div class="col-md-6 pl-0"  id="OCR">
+          <div class="content">
+            <form  method=post enctype=multipart/form-data>
+            <input type="file" class="btn"  name="file">
+          <input  type="submit" class="btn" style="background-color: #e90e65;" value="Result"></form>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid fh5co-insta-feed activity" id="result">
+    <div class="container recent">
+      <div class="row mb-5 pb-5">
+        <div class="col-lg-6">
+          <div class="twit-box">
+            <div class="media mb-3"> 
+              <div class="media-body">
+                <h5 class="mb-0 mt-3">Result</h5>
+              </div>
+            </div>
+            {% if extracted_text %}
+            <hr />
+            <p class="text-justify"> {{ extracted_text }} </p>
+            {% else %}
+            The extracted text will be displayed here
+            {% endif %}
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="container recent" id="activity">
+        <div class="row">
+          <h2>Verticles</h2>
+          <div class="owl-carousel owl-carousel2 owl-theme">
+            <div>
+              <div class="card"> <img class="card-img" src="static/6.jpg" alt="" height="404px" width="254px">
+                <div class="card-img-overlay"> <a href="#"></a>
+                  <div class="bottom-text">
+                    <h5 class="card-title">Menu Digitization</h5>
+                    <p class="card-text">Transform food menus to structured data with names and prices. Reduce overhead costs in your onboarding pipelines by 90%.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card"> <img class="card-img" src="static/7.jpg" alt="" height="404px" width="254px">
+                <div class="card-img-overlay"> <a href="#"></a>
+                  <div class="bottom-text">
+                    <h5 class="card-title">Invoice Digitization</h5>
+                    <p class="card-text">Scan invoices and feed them to your software withhout manually typing any vendor info or line item information.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card"> <img class="card-img" src="static/8.jpg" alt="" height="404px" width="254px">
+                <div class="card-img-overlay"> <a href="#"></a>
+                  <div class="bottom-text">
+                    <h5 class="card-title">Meter Readings</h5>
+                    <p class="card-text">Automate electricity meter readings, bike readings of delivery boys, odometer readings of car.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card"> <img class="card-img" src="static/9.jpg" alt="" height="404px" width="254px">
+                <div class="card-img-overlay"> <a href="#"></a>
+                  <div class="bottom-text">
+                    <h5 class="card-title">Social Media</h5>
+                    <p class="card-text">Wanted to know what users are posting via memes? Automate tag generation for images in your upload pipeliness.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid recent fh5co-portfolio" id="portfolio">
+    <div class="container">
+      <h2>Document Supported</h2>
+      <div class="row">
+        <div class="bx bx-1">
+          <div class="card"> <img class="card-img" src="static/port1.png" alt="">
+            <div class="card-img-overlay"> <a href="#"></a>
+              <div class="bottom-text">
+                <h5 class="card-title">Invoice</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bx bx-2">
+          <div class="card"> <img class="card-img" src="static/port2.png" alt="">
+            <div class="card-img-overlay"> <a href="#"></a>
+              <div class="bottom-text">
+                <h5 class="card-title">ID Card</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bx bx-3">
+          <div class="card"> <img class="card-img" src="static/port3.png" alt="">
+            <div class="card-img-overlay"> <a href="#"></a>
+              <div class="bottom-text">
+                <h5 class="card-title">Purchase Orders</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bx bx-4">
+          <div class="card"> <img class="card-img" src="static/port4.png" alt="">
+            <div class="card-img-overlay"> <a href="#"></a>
+              <div class="bottom-text">
+                <h5 class="card-title">Income Proof</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bx bx-middle" style="padding: 0;">
+          <div class="bx bx-5">
+            <div class="card"> <img class="card-img" src="static/port5.png" alt="">
+              <div class="card-img-overlay"> <a href="#"></a>
+                <div class="bottom-text">
+                  <h5 class="card-title">Tax Form</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bx bx-6">
+            <div class="card"> <img class="card-img" src="static/port6.png" alt="">
+              <div class="card-img-overlay"> <a href="#"></a>
+                <div class="bottom-text">
+                  <h5 class="card-title">Mortgage Forms</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fh5co-recent-work activity" id="references">
+    <div class="container recent">
+      <div class="row">
+        <h2>References</h2>
+        <div class="owl-carousel owl-carousel3 owl-theme">
+          <div>
+            <div class="card"> <img class="card-img" src="static/10.jpg" alt="" height="504px" width="350px">
+              <div class="card-img-overlay">
+                <div class="bottom-text">
+                  <h5 class="card-title">Tesseract OCR:  &nbsp; Text localization and detection</h5>
+                  <a href="https://www.pyimagesearch.com/2020/05/25/tesseract-ocr-text-localization-and-detection/">Read more <img src="static/double-right.svg" alt=""></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card"> <img class="card-img" src="static/11.jpg"  alt="" height="504px" width="350px">
+              <div class="card-img-overlay">
+                <div class="bottom-text">
+                  <h5 class="card-title">OpenCV OCR and text recognition with Tesseract &nbsp; </h5>
+                  <a href="https://www.pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/">Read more <img src="static/double-right.svg" alt=""></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card"> <img class="card-img" src="static/12.jpg" alt="" height="504px" width="350px">
+              <div class="card-img-overlay">
+                <div class="bottom-text">
+                  <h5 class="card-title">Image Processing: &nbsp; using Neural Networks </h5>
+                  <a href="https://www.pyimagesearch.com/category/image-processing/">Read more <img src="static/double-right.svg" alt=""></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fh5co-about-me" id="testimonial">
+    <div id="my-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="card"> <img class="card-img d-block w-100" src="static/about-me-img.jpg" alt="">
+          <div class="card-img-overlay">
+            <h2>People says about us</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-md-block"> <img src="static/quote-icon.png" alt="">
+            <p> "Conveniet and easy to Use!!!!"</p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="carousel-caption d-md-block"> <img src="static/quote-icon.png" alt="">
+            <p>"Our experience with OCR has been phenomenal! They have adapted to our needs with minimal issues.."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-md-block"> <img src="static/quote-icon.png" alt="">
+            <p>"OCR Services offers solutions that are user friendly"</p>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#my-carousel" data-slide-to="0"> <img style="border-radius: 50%;" src="static/14.jpg" alt=""> <span></span> </li>
+        <li class="active" data-target="#my-carousel" data-slide-to="1" aria-current="location"> <img style="border-radius: 50%;" src="static/13.jpg" alt=""> <span>Deepak</span> </li>
+        <li data-target="#my-carousel" data-slide-to="2"> <img style="border-radius: 50%;" src="static/15.jpg" alt=""> <span></span> </li>
+      </ol>
+    </div>
+  </div>
+  <footer class="container-fluid p-0 pr-0">
+    
+    <div class="copy pt-4 pb-4">
+      <p><a href="#" target="_blank"> &copy; 2020 Extract</a>  &nbsp;  |  &nbsp; Design by <a href="#" target="_blank">Deepak</a> &nbsp; | &nbsp;  All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+  <script src="static/jquery-3.3.1.slim.min.js"></script> 
+  <script src="static/popper.min.js" ></script> 
+  <script src="static/bootstrap.min.js"></script> 
+  <script src="static/owl.carousel.min.js"></script> 
+  <script src="static/main.js"></script>
+
+</body>
+</html>
